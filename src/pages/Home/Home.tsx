@@ -355,43 +355,53 @@ export function HomePage() {
       </section>
 
       {/* 3. SECONDARY SPECIALIZED TECHNICAL CAPABILITIES */}
-      <section className="py-16 lg:py-20 bg-[#07090C] border-b border-white/5">
+      <section className="py-20 lg:py-28 bg-[#07090C] border-b border-white/5">
         <div className="technical-container">
           <Reveal>
-            <div className="flex items-center gap-3 mb-8">
-              <span className="h-px w-8 bg-red-500" />
-              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-red-500">02 / Capabilities</span>
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="h-px w-8 bg-red-500" />
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-red-500">02 / Capabilities</span>
+                </div>
+                <h2 className="font-display text-3xl sm:text-4xl text-white leading-tight max-w-lg">
+                  Specialized technical & support services
+                </h2>
+              </div>
+              <p className="max-w-sm text-sm text-white/55 leading-relaxed">
+                Certified fabrication, technical secondment, and rapid mobilization supporting our core engineering pillars.
+              </p>
             </div>
           </Reveal>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {secondaryServices.map((sec, idx) => {
               const SecIcon = sec.icon;
               return (
                 <Reveal key={idx}>
                   <Link
                     to={sec.link}
-                    className="group flex flex-col gap-4 rounded-xl border border-white/10 bg-[#0D1117]/80 p-5 transition-all duration-300 hover:border-red-500/40 hover:bg-[#0D1117] hover:-translate-y-0.5"
+                    className="group flex h-full flex-col gap-5 rounded-2xl border border-white/10 bg-[#0D1117] p-6 transition-all duration-300 hover:border-red-500/40 hover:shadow-lg hover:shadow-red-900/10 hover:-translate-y-1"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-[#12171E] text-red-500 group-hover:bg-red-600 group-hover:text-white group-hover:border-red-500 transition-colors">
-                        <SecIcon className="h-4.5 w-4.5" />
+                      <span className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-[#12171E] text-red-500 group-hover:bg-red-600 group-hover:text-white group-hover:border-red-500 transition-colors">
+                        <SecIcon className="h-5 w-5" />
                       </span>
-                      <span className="text-[10px] font-mono text-white/40">0{idx + 1}</span>
+                      <span className="text-[10px] font-mono text-white/35 tracking-widest">0{idx + 1}</span>
                     </div>
-                    <div>
-                      <div className="text-[10px] font-mono uppercase tracking-wider text-red-500/80 mb-1">
+                    <div className="flex-1">
+                      <div className="text-[10px] font-mono uppercase tracking-wider text-red-500 mb-2">
                         {sec.badge}
                       </div>
-                      <h3 className="font-display text-lg text-white group-hover:text-red-400 transition-colors">
+                      <h3 className="font-display text-xl text-white group-hover:text-red-400 transition-colors">
                         {sec.title}
                       </h3>
-                      <p className="mt-2 text-xs leading-relaxed text-white/50 line-clamp-2">
+                      <p className="mt-3 text-sm leading-relaxed text-white/55">
                         {sec.desc}
                       </p>
                     </div>
-                    <div className="mt-auto pt-3 flex items-center gap-1 text-[11px] font-semibold uppercase tracking-wider text-white/50 group-hover:text-red-400 transition-colors">
-                      Learn more <ArrowRight className="h-3 w-3" />
+                    <div className="pt-4 border-t border-white/10 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-white/50 group-hover:text-red-400 transition-colors">
+                      Learn more <ArrowRight className="h-3.5 w-3.5" />
                     </div>
                   </Link>
                 </Reveal>

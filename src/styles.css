@@ -174,7 +174,7 @@
 
 @theme inline { --color-hero-foreground: var(--hero-foreground); }
 
-@utility technical-container { width: min(100% - 2.5rem, 88rem); margin-inline: auto; }
+@utility technical-container { width: min(100% - 2rem, 80rem); margin-inline: auto; padding-inline: 1rem; }
 @utility technical-grid { background-image: linear-gradient(to right, color-mix(in oklab, var(--border) 55%, transparent) 1px, transparent 1px); background-size: calc((100vw - 2.5rem) / 4) 100%; }
 @utility section-label { font-size: .65rem; line-height: 1rem; text-transform: uppercase; letter-spacing: .16em; color: var(--muted-foreground); }
 @utility technical-link { position: relative; opacity: .76; transition: opacity .25s ease; &:hover, &[data-status="active"] { opacity: 1; } &::after { content: ""; position: absolute; inset-inline: 0; bottom: -.45rem; height: 1px; transform: scaleX(0); background: currentColor; transition: transform .25s ease; } &:hover::after, &[data-status="active"]::after { transform: scaleX(1); } }
