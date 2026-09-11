@@ -140,14 +140,34 @@
     border-color: var(--color-border);
   }
 
+  /* Hide scrollbar but keep scrolling */
+  html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* old IE/Edge */
+  }
+
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     letter-spacing: 0;
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-  ::selection { background: var(--primary); color: var(--primary-foreground); }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
 }
 
 @theme inline { --color-hero-foreground: var(--hero-foreground); }

@@ -4,6 +4,41 @@ import { Reveal } from "@/components/shared/reveal";
 import { Button } from "@/components/ui/button";
 import { Briefcase, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 
+const openPositions = [
+  {
+    department: "Engineering",
+    location: "UAE / Regional",
+    type: "Full-time",
+    experience: "5+ years",
+    title: "Senior Project Engineer",
+    desc: "Lead multi-disciplinary industrial and construction projects from planning through handover, coordinating technical teams, HSE compliance, and client deliverables.",
+  },
+  {
+    department: "QA / QC",
+    location: "UAE",
+    type: "Full-time",
+    experience: "3+ years",
+    title: "QA/QC Inspector",
+    desc: "Perform inspections, maintain ITPs, review MTCs, and ensure workmanship meets ISO and project specifications across civil, mechanical, and MEP scopes.",
+  },
+  {
+    department: "HSE",
+    location: "Site-based / UAE",
+    type: "Full-time",
+    experience: "4+ years",
+    title: "HSE Officer",
+    desc: "Drive site safety culture, conduct risk assessments, toolbox talks, and ensure compliance with ISO 45001 and client HSE requirements.",
+  },
+  {
+    department: "Fabrication",
+    location: "Workshop / UAE",
+    type: "Full-time",
+    experience: "3+ years",
+    title: "Welding Supervisor",
+    desc: "Supervise coded welding operations, spool fabrication, and structural steel works with full NDT coordination and quality documentation.",
+  },
+];
+
 export function CareersPage() {
   return (
     <>

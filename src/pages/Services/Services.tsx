@@ -21,6 +21,26 @@ import qualityImg from "@/assets/images/quality-detail.jpg";
 import processImg from "@/assets/images/industry-process.jpg";
 import machiningImg from "@/assets/images/product-machining.jpg";
 
+const serviceIcons: Record<string, typeof Building2> = {
+  Building2,
+  Wrench,
+  Flame,
+  Zap,
+  Cpu,
+  Layers,
+  Users,
+};
+
+const serviceImages: Record<string, string> = {
+  "building-construction": processImg,
+  "facility-management": qualityImg,
+  "oil-gas": machiningImg,
+  "energy-utilities": heroTurbine,
+  "mep-services": processImg,
+  "welding-fabrication": machiningImg,
+  "technical-support": qualityImg,
+};
+
 export function ServicesPage() {
   return (
     <>
