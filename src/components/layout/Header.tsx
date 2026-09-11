@@ -83,7 +83,7 @@ export function Header({ onQuoteOpen }: HeaderProps) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div
             className={`flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-[#0B0E12]/85 backdrop-blur-xl shadow-2xl shadow-black/40 transition-all duration-300 ${
-              scrolled ? "h-14 px-4" : "h-16 px-5 sm:h-[68px] sm:px-6"
+              scrolled ? "h-16 px-4" : "h-[72px] px-5 sm:h-20 sm:px-6"
             }`}
           >
             {/* Logo */}
@@ -96,7 +96,7 @@ export function Header({ onQuoteOpen }: HeaderProps) {
                 src={logoFull}
                 alt="Shield Global"
                 className={`w-auto object-contain transition-all duration-300 ${
-                  scrolled ? "h-8 sm:h-9" : "h-9 sm:h-10"
+                  scrolled ? "h-10 sm:h-11" : "h-12 sm:h-14"
                 }`}
               />
             </Link>
