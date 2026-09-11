@@ -231,19 +231,19 @@ export function HomePage() {
         {/* Bottom Trust & Compliance Bar */}
         <div className="relative z-10 border-t border-white/10 bg-black/60 backdrop-blur-md py-4">
           <div className="technical-container grid grid-cols-2 gap-4 sm:grid-cols-4 text-white/75 text-[10px] sm:text-xs font-mono uppercase tracking-[0.14em]">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <ShieldCheck className="h-4 w-4 text-red-500 shrink-0" />
               <span>ISO 9001 / 14001 / 45001</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <Building2 className="h-4 w-4 text-red-500 shrink-0" />
               <span>Civil & MEP Contracting</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <Flame className="h-4 w-4 text-red-500 shrink-0" />
               <span>Oil & Gas / Energy Specs</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <CheckCircle2 className="h-4 w-4 text-red-500 shrink-0" />
               <span>UAE & Regional Execution</span>
             </div>
