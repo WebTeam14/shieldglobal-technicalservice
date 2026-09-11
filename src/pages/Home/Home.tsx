@@ -232,19 +232,19 @@ export function HomePage() {
         <div className="relative z-10 border-t border-white/10 bg-black/60 backdrop-blur-md py-4">
           <div className="technical-container grid grid-cols-2 gap-4 sm:grid-cols-4 text-white/75 text-[10px] sm:text-xs font-mono uppercase tracking-[0.14em]">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-primary shrink-0" />
+              <ShieldCheck className="h-4 w-4 text-red-500 shrink-0" />
               <span>ISO 9001 / 14001 / 45001</span>
             </div>
             <div className="flex items-center gap-2">
-              <Building2 className="h-4 w-4 text-primary shrink-0" />
+              <Building2 className="h-4 w-4 text-red-500 shrink-0" />
               <span>Civil & MEP Contracting</span>
             </div>
             <div className="flex items-center gap-2">
-              <Flame className="h-4 w-4 text-primary shrink-0" />
+              <Flame className="h-4 w-4 text-red-500 shrink-0" />
               <span>Oil & Gas / Energy Specs</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-red-500 shrink-0" />
               <span>UAE & Regional Execution</span>
             </div>
           </div>
@@ -252,17 +252,17 @@ export function HomePage() {
       </section>
 
       {/* 2. KEY SERVICES – 5 MAIN PILLARS */}
-      <section id="key-services" className="py-24 lg:py-32 bg-background border-b border-border scroll-mt-24">
+      <section id="key-services" className="py-24 lg:py-32 bg-[#0B0E12] border-b border-white/5 scroll-mt-24">
         <div className="technical-container">
           <Reveal>
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4 border-b border-border">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4 border-b border-white/10">
               <div>
-                <div className="section-label text-primary">01 / Key Services</div>
-                <h2 className="mt-3 font-display text-4xl sm:text-5xl lg:text-6xl text-foreground">
+                <div className="section-label text-red-500">01 / Key Services</div>
+                <h2 className="mt-3 font-display text-4xl sm:text-5xl lg:text-6xl text-white">
                   5 Main Pillars of Excellence
                 </h2>
               </div>
-              <p className="max-w-md text-sm text-muted-foreground leading-relaxed">
+              <p className="max-w-md text-sm text-white/60 leading-relaxed">
                 Integrated technical, engineering, and maintenance solutions tailored to the demanding standards of modern industrial infrastructure.
               </p>
             </div>
@@ -279,29 +279,29 @@ export function HomePage() {
                   key={pillar.number}
                   className={index === 3 || index === 4 ? "sm:col-span-1 lg:col-span-1" : ""}
                 >
-                  <div className="group relative flex h-full flex-col justify-between overflow-hidden border border-border bg-card transition-all duration-300 hover:border-primary/60 hover:shadow-xl">
+                  <div className="group relative flex h-full flex-col justify-between overflow-hidden rounded-xl border border-white/10 bg-[#0D1117] transition-all duration-300 hover:border-red-500/40 hover:shadow-xl hover:shadow-red-900/10 hover:-translate-y-1">
                     {/* Visual Card Image Header */}
-                    <div className="relative aspect-[16/10] overflow-hidden bg-foreground">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-[#0D1117]">
                       <img
                         loading="lazy"
                         src={pillar.image}
                         alt={pillar.title}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-[#0D1117]/30 to-transparent" />
                       
                       {/* Top Badges */}
                       <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                        <span className="flex h-9 w-9 items-center justify-center border border-white/20 bg-foreground/80 backdrop-blur-md text-primary font-mono text-xs font-bold shadow-md">
+                        <span className="flex h-9 w-9 items-center justify-center border border-white/20 bg-[#0D1117]/80 backdrop-blur-md text-red-500 font-mono text-xs font-bold shadow-md">
                           {pillar.number}
                         </span>
-                        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/90 text-primary-foreground backdrop-blur-md shadow-md">
+                        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-red-600/90 text-white backdrop-blur-md shadow-md">
                           <Icon className="h-4 w-4" />
                         </div>
                       </div>
 
                       {/* Tagline */}
-                      <div className="absolute bottom-3 left-4 text-[11px] font-mono uppercase tracking-widest text-primary font-semibold">
+                      <div className="absolute bottom-3 left-4 text-[11px] font-mono uppercase tracking-widest text-red-500 font-semibold">
                         {pillar.tagline}
                       </div>
                     </div>
@@ -309,18 +309,18 @@ export function HomePage() {
                     {/* Card Body */}
                     <div className="flex flex-1 flex-col justify-between p-6 sm:p-7">
                       <div className="space-y-3">
-                        <h3 className="font-display text-2xl sm:text-3xl text-foreground group-hover:text-primary transition-colors">
+                        <h3 className="font-display text-2xl sm:text-3xl text-white group-hover:text-red-500 transition-colors">
                           {pillar.number} — {pillar.title}
                         </h3>
-                        <p className="text-sm leading-relaxed text-muted-foreground">
+                        <p className="text-sm leading-relaxed text-white/60">
                           {pillar.desc}
                         </p>
 
                         {/* Capabilities Bullet points */}
-                        <div className="pt-3 border-t border-border/70 space-y-1.5">
+                        <div className="pt-3 border-t border-white/10 space-y-1.5">
                           {pillar.features.map((feat, idx) => (
-                            <div key={idx} className="flex items-center gap-2 text-xs text-foreground/80">
-                              <span className="h-1.5 w-1.5 bg-primary/60 rounded-full shrink-0" />
+                            <div key={idx} className="flex items-center gap-2 text-xs text-white/80">
+                              <span className="h-1.5 w-1.5 bg-red-500/60 rounded-full shrink-0" />
                               <span>{feat}</span>
                             </div>
                           ))}
@@ -328,18 +328,18 @@ export function HomePage() {
                       </div>
 
                       {/* Action Links */}
-                      <div className="mt-6 pt-5 border-t border-border flex items-center justify-between">
+                      <div className="mt-6 pt-5 border-t border-white/10 flex items-center justify-between">
                         <Link
                           to="/services"
                           hash={pillar.slug}
-                          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-foreground hover:text-primary transition-colors"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-white hover:text-red-500 transition-colors"
                         >
                           Explore Details <ArrowUpRight className="h-4 w-4" />
                         </Link>
                         <QuoteModal defaultService={pillar.title}>
                           <button
                             type="button"
-                            className="text-[11px] font-mono uppercase tracking-wider text-primary hover:underline font-medium"
+                            className="text-[11px] font-mono uppercase tracking-wider text-red-500 hover:underline font-medium"
                           >
                             Get Quote
                           </button>
@@ -355,17 +355,17 @@ export function HomePage() {
       </section>
 
       {/* 3. SECONDARY SPECIALIZED TECHNICAL CAPABILITIES */}
-      <section className="py-24 lg:py-32 bg-card border-b border-border">
+      <section className="py-24 lg:py-32 bg-[#07090C] border-b border-white/5">
         <div className="technical-container">
           <Reveal>
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-border">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-white/10">
               <div>
-                <div className="section-label text-primary">02 / Secondary Capabilities</div>
-                <h2 className="mt-3 font-display text-3xl sm:text-5xl text-foreground">
+                <div className="section-label text-red-500">02 / Secondary Capabilities</div>
+                <h2 className="mt-3 font-display text-3xl sm:text-5xl text-white">
                   Specialized Technical & Support Services
                 </h2>
               </div>
-              <p className="max-w-md text-sm text-muted-foreground leading-relaxed">
+              <p className="max-w-md text-sm text-white/60 leading-relaxed">
                 Complementing our main pillars with certified shop fabrication, technical secondment, and fast mobilization across turnaround projects.
               </p>
             </div>
@@ -377,41 +377,41 @@ export function HomePage() {
               const SecIcon = sec.icon;
               return (
                 <Reveal key={idx}>
-                  <div className="group flex h-full flex-col justify-between border border-border bg-background p-6 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                  <div className="group flex h-full flex-col justify-between rounded-xl border border-white/10 bg-[#0D1117] p-6 transition-all duration-300 hover:border-red-500/40 hover:shadow-lg hover:shadow-red-900/10 hover:-translate-y-1">
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <span className="flex h-11 w-11 items-center justify-center border border-border bg-card text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors">
+                        <span className="flex h-11 w-11 items-center justify-center border border-white/10 bg-[#12171E] text-red-500 group-hover:bg-red-600 group-hover:text-white group-hover:border-red-500 transition-colors">
                           <SecIcon className="h-5 w-5" />
                         </span>
-                        <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-white/60">
                           0{idx + 1}
                         </span>
                       </div>
 
-                      <div className="text-[10px] font-mono font-semibold uppercase tracking-wider text-primary">
+                      <div className="text-[10px] font-mono font-semibold uppercase tracking-wider text-red-500">
                         {sec.badge}
                       </div>
 
-                      <h3 className="font-display text-2xl text-foreground group-hover:text-primary transition-colors">
+                      <h3 className="font-display text-2xl text-white group-hover:text-red-500 transition-colors">
                         {sec.title}
                       </h3>
 
-                      <p className="text-xs leading-relaxed text-muted-foreground">
+                      <p className="text-xs leading-relaxed text-white/60">
                         {sec.desc}
                       </p>
                     </div>
 
-                    <div className="mt-6 pt-4 border-t border-border flex items-center justify-between">
+                    <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
                       <Link
                         to={sec.link}
-                        className="text-xs font-semibold uppercase tracking-wider text-foreground group-hover:text-primary inline-flex items-center gap-1"
+                        className="text-xs font-semibold uppercase tracking-wider text-white group-hover:text-red-500 inline-flex items-center gap-1"
                       >
                         Learn More <ArrowRight className="h-3.5 w-3.5" />
                       </Link>
                       <QuoteModal defaultService={sec.title}>
                         <button
                           type="button"
-                          className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground hover:text-primary"
+                          className="text-[11px] font-mono uppercase tracking-wider text-white/60 hover:text-red-500"
                         >
                           RFQ
                         </button>
@@ -510,17 +510,17 @@ export function HomePage() {
       </section>
 
       {/* 5. CALL TO ACTION / REQUEST A QUOTATION */}
-      <section className="py-24 lg:py-32 bg-card border-t border-border">
+      <section className="py-24 lg:py-32 bg-[#0B0E12] border-t border-white/5">
         <div className="technical-container">
           <Reveal>
-            <div className="relative overflow-hidden border border-border bg-background p-8 sm:p-12 lg:p-16 shadow-xl">
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#0D1117] p-8 sm:p-12 lg:p-16 shadow-xl">
               <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
                 <div className="space-y-4 lg:col-span-8">
-                  <div className="section-label text-primary">Start Your Technical Tender</div>
-                  <h2 className="font-display text-3xl sm:text-5xl md:text-6xl text-foreground">
+                  <div className="section-label text-red-500">Start Your Technical Tender</div>
+                  <h2 className="font-display text-3xl sm:text-5xl md:text-6xl text-white">
                     Ready to mobilize your next industrial or construction project?
                   </h2>
-                  <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
+                  <p className="text-sm sm:text-base text-white/60 max-w-2xl leading-relaxed">
                     Contact Shield Global Technical Services LLC for competitive bids, project proposals, and technical consultations across the UAE and Gulf region.
                   </p>
                 </div>
@@ -530,7 +530,7 @@ export function HomePage() {
                     <Button
                       variant="default"
                       size="lg"
-                      className="w-full sm:w-auto bg-primary text-primary-foreground py-6 px-8 text-xs uppercase tracking-widest font-bold shadow-lg"
+                      className="w-full sm:w-auto bg-red-600 text-white py-6 px-8 text-xs uppercase tracking-widest font-bold shadow-lg"
                     >
                       Request a Quotation <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -539,7 +539,7 @@ export function HomePage() {
                     asChild
                     variant="outline"
                     size="lg"
-                    className="w-full sm:w-auto py-6 px-8 text-xs uppercase tracking-widest font-semibold"
+                    className="w-full sm:w-auto py-6 px-8 text-xs uppercase tracking-widest font-semibold border-white/20 text-white hover:bg-white/10 rounded-lg"
                   >
                     <Link to="/contact">Contact Technical Desk</Link>
                   </Button>
