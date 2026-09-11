@@ -167,10 +167,10 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2.5 border border-primary/40 bg-primary/10 px-3.5 py-1.5 backdrop-blur-md self-start"
+            className="inline-flex items-center gap-2.5 border border-red-500/40 bg-red-500/10 px-3.5 py-1.5 backdrop-blur-md self-start rounded-md"
           >
-            <Shield className="h-4 w-4 text-accent" />
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-accent">
+            <Shield className="h-4 w-4 text-red-500" />
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-red-400">
               SHIELD GLOBAL TECHNICAL SERVICES LLC
             </span>
           </motion.div>
@@ -184,7 +184,7 @@ export function HomePage() {
           >
             Engineering. <br className="hidden sm:inline" />
             Technical Services. <br />
-            <em className="font-normal text-accent not-italic">Project Excellence.</em>
+            <span className="font-normal text-red-500">Project Excellence.</span>
           </motion.h1>
 
           {/* Description */}
@@ -208,7 +208,7 @@ export function HomePage() {
               asChild
               variant="outline"
               size="lg"
-              className="border-hero-foreground/30 bg-hero-foreground/5 text-hero-foreground hover:bg-hero-foreground hover:text-foreground backdrop-blur-sm text-xs uppercase tracking-widest font-semibold px-7 py-6"
+              className="border-white/25 bg-white/5 text-white hover:bg-white hover:text-black backdrop-blur-sm text-xs uppercase tracking-widest font-semibold px-7 py-6 rounded-lg"
             >
               <Link to="/services">
                 Our Services <ArrowRight className="ml-2 h-4 w-4" />
@@ -219,7 +219,7 @@ export function HomePage() {
               <Button
                 variant="default"
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-xs uppercase tracking-widest font-bold px-7 py-6 shadow-lg shadow-primary/20"
+                className="bg-red-600 hover:bg-red-500 text-white text-xs uppercase tracking-widest font-bold px-7 py-6 shadow-lg shadow-red-900/40 rounded-lg border-0"
               >
                 Request a Quotation
               </Button>
