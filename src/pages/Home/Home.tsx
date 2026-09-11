@@ -144,7 +144,7 @@ export function HomePage() {
   return (
     <>
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[96svh] flex flex-col justify-between overflow-hidden bg-foreground text-hero-foreground">
+      <section className="relative min-h-[96svh] flex flex-col justify-between overflow-hidden bg-[#07090C] text-white">
         {/* Background Image with Parallax & Industrial Overlay */}
         <motion.div style={{ y: imageY }} className="absolute inset-0 h-[115%] w-full">
           <img
@@ -152,13 +152,14 @@ export function HomePage() {
             width={1920}
             height={1080}
             alt="Shield Global Technical Services LLC industrial operations"
-            className="h-full w-full object-cover object-[60%_center] opacity-45 sm:opacity-55"
+            className="h-full w-full object-cover object-[60%_center] opacity-50 sm:opacity-60"
           />
         </motion.div>
         
-        {/* Tech Grid Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/85 to-foreground/40 sm:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground via-transparent to-foreground/30" />
+        {/* Dark overlays so text stays readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07090C] via-[#07090C]/90 to-[#07090C]/50 sm:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07090C] via-transparent to-[#07090C]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#07090C]/60 via-transparent to-transparent" />
 
         {/* Hero Content */}
         <div className="technical-container relative z-10 flex flex-1 flex-col justify-center pb-12 pt-32 lg:pb-16 lg:pt-36">
@@ -180,7 +181,7 @@ export function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="mt-6 max-w-5xl font-display text-4xl leading-[1.02] sm:text-6xl md:text-7xl lg:text-[6.5rem] tracking-tight text-hero-foreground"
+            className="mt-6 max-w-5xl font-display text-4xl leading-[1.02] sm:text-6xl md:text-7xl lg:text-[6.5rem] tracking-tight text-white"
           >
             Engineering. <br className="hidden sm:inline" />
             Technical Services. <br />
@@ -192,7 +193,7 @@ export function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-6 max-w-2xl text-sm leading-relaxed text-hero-foreground/85 sm:text-base md:text-lg font-normal"
+            className="mt-6 max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base md:text-lg font-normal"
           >
             Delivering integrated technical, construction, maintenance and project support solutions across Building Construction, Facility Management, Oil & Gas, Energy & Utilities and MEP sectors in the UAE and beyond.
           </motion.p>
@@ -228,8 +229,8 @@ export function HomePage() {
         </div>
 
         {/* Bottom Trust & Compliance Bar */}
-        <div className="relative z-10 border-t border-white/10 bg-foreground/60 backdrop-blur-md py-4">
-          <div className="technical-container grid grid-cols-2 gap-4 sm:grid-cols-4 text-hero-foreground/75 text-[10px] sm:text-xs font-mono uppercase tracking-[0.14em]">
+        <div className="relative z-10 border-t border-white/10 bg-black/60 backdrop-blur-md py-4">
+          <div className="technical-container grid grid-cols-2 gap-4 sm:grid-cols-4 text-white/75 text-[10px] sm:text-xs font-mono uppercase tracking-[0.14em]">
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-primary shrink-0" />
               <span>ISO 9001 / 14001 / 45001</span>
@@ -425,31 +426,31 @@ export function HomePage() {
       </section>
 
       {/* 4. WHY SHIELD GLOBAL & HSEQ EXCELLENCE */}
-      <section className="py-24 lg:py-32 bg-foreground text-hero-foreground">
+      <section className="py-24 lg:py-32 bg-foreground text-white">
         <div className="technical-container">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="space-y-6 lg:col-span-7">
               <div className="section-label text-accent">HSEQ & Precision Standards</div>
-              <h2 className="font-display text-4xl sm:text-6xl leading-[1.02] text-hero-foreground">
+              <h2 className="font-display text-4xl sm:text-6xl leading-[1.02] text-white">
                 Rigorous Safety Culture. <br />
                 <em className="font-normal text-accent not-italic">Zero-Compromise Quality.</em>
               </h2>
-              <p className="text-sm leading-relaxed text-hero-foreground/80 sm:text-base max-w-xl">
+              <p className="text-sm leading-relaxed text-white/80 sm:text-base max-w-xl">
                 Every project executed by Shield Global Technical Services LLC adheres strictly to international ISO standards and regional regulatory requirements. We provide complete transparency through Inspection Test Plans (ITP), Material Test Certificates (MTC), and certified QA/QC oversight.
               </p>
 
               <div className="grid gap-4 pt-3 sm:grid-cols-3">
                 <div className="border border-white/15 bg-white/5 p-4 backdrop-blur-sm">
                   <div className="font-display text-2xl text-accent">ISO 9001</div>
-                  <div className="text-[11px] text-hero-foreground/70 uppercase tracking-wider mt-1">Quality Management</div>
+                  <div className="text-[11px] text-white/70 uppercase tracking-wider mt-1">Quality Management</div>
                 </div>
                 <div className="border border-white/15 bg-white/5 p-4 backdrop-blur-sm">
                   <div className="font-display text-2xl text-accent">ISO 45001</div>
-                  <div className="text-[11px] text-hero-foreground/70 uppercase tracking-wider mt-1">Occupational Health & Safety</div>
+                  <div className="text-[11px] text-white/70 uppercase tracking-wider mt-1">Occupational Health & Safety</div>
                 </div>
                 <div className="border border-white/15 bg-white/5 p-4 backdrop-blur-sm">
                   <div className="font-display text-2xl text-accent">ISO 14001</div>
-                  <div className="text-[11px] text-hero-foreground/70 uppercase tracking-wider mt-1">Environmental Management</div>
+                  <div className="text-[11px] text-white/70 uppercase tracking-wider mt-1">Environmental Management</div>
                 </div>
               </div>
 
@@ -459,7 +460,7 @@ export function HomePage() {
                     Explore HSE & Quality Manual <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white/20 text-hero-foreground hover:bg-white/10">
+                <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
                   <Link to="/about">About Our Leadership</Link>
                 </Button>
               </div>
