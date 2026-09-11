@@ -426,57 +426,80 @@ export function HomePage() {
       </section>
 
       {/* 4. WHY SHIELD GLOBAL & HSEQ EXCELLENCE */}
-      <section className="py-24 lg:py-32 bg-foreground text-white">
+      <section className="py-24 lg:py-32 bg-[#07090C] text-white">
         <div className="technical-container">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="space-y-6 lg:col-span-7">
-              <div className="section-label text-accent">HSEQ & Precision Standards</div>
-              <h2 className="font-display text-4xl sm:text-6xl leading-[1.02] text-white">
-                Rigorous Safety Culture. <br />
-                <em className="font-normal text-accent not-italic">Zero-Compromise Quality.</em>
+              <div className="flex items-center gap-3">
+                <span className="h-px w-8 bg-red-500" />
+                <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-red-500">
+                  HSEQ & Precision Standards
+                </span>
+              </div>
+              <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-white">
+                Rigorous Safety Culture.{" "}
+                <span className="text-red-500">Zero-Compromise Quality.</span>
               </h2>
-              <p className="text-sm leading-relaxed text-white/80 sm:text-base max-w-xl">
-                Every project executed by Shield Global Technical Services LLC adheres strictly to international ISO standards and regional regulatory requirements. We provide complete transparency through Inspection Test Plans (ITP), Material Test Certificates (MTC), and certified QA/QC oversight.
+              <p className="text-sm leading-relaxed text-white/75 sm:text-base max-w-xl">
+                Every project executed by Shield Global Technical Services LLC adheres
+                strictly to international ISO standards and regional regulatory requirements.
+                We provide complete transparency through Inspection Test Plans (ITP),
+                Material Test Certificates (MTC), and certified QA/QC oversight.
               </p>
 
-              <div className="grid gap-4 pt-3 sm:grid-cols-3">
-                <div className="border border-white/15 bg-white/5 p-4 backdrop-blur-sm">
-                  <div className="font-display text-2xl text-accent">ISO 9001</div>
-                  <div className="text-[11px] text-white/70 uppercase tracking-wider mt-1">Quality Management</div>
+              <div className="grid gap-3 pt-2 sm:grid-cols-3">
+                <div className="rounded-lg border border-white/10 bg-[#0D1117] p-4">
+                  <div className="font-display text-xl sm:text-2xl text-red-500">ISO 9001</div>
+                  <div className="text-[10px] sm:text-[11px] text-white/50 uppercase tracking-wider mt-1.5">
+                    Quality Management
+                  </div>
                 </div>
-                <div className="border border-white/15 bg-white/5 p-4 backdrop-blur-sm">
-                  <div className="font-display text-2xl text-accent">ISO 45001</div>
-                  <div className="text-[11px] text-white/70 uppercase tracking-wider mt-1">Occupational Health & Safety</div>
+                <div className="rounded-lg border border-white/10 bg-[#0D1117] p-4">
+                  <div className="font-display text-xl sm:text-2xl text-red-500">ISO 45001</div>
+                  <div className="text-[10px] sm:text-[11px] text-white/50 uppercase tracking-wider mt-1.5">
+                    Occupational Health & Safety
+                  </div>
                 </div>
-                <div className="border border-white/15 bg-white/5 p-4 backdrop-blur-sm">
-                  <div className="font-display text-2xl text-accent">ISO 14001</div>
-                  <div className="text-[11px] text-white/70 uppercase tracking-wider mt-1">Environmental Management</div>
+                <div className="rounded-lg border border-white/10 bg-[#0D1117] p-4">
+                  <div className="font-display text-xl sm:text-2xl text-red-500">ISO 14001</div>
+                  <div className="text-[10px] sm:text-[11px] text-white/50 uppercase tracking-wider mt-1.5">
+                    Environmental Management
+                  </div>
                 </div>
               </div>
 
-              <div className="pt-4 flex flex-wrap gap-4">
-                <Button asChild variant="editorial" size="lg">
+              <div className="pt-4 flex flex-wrap gap-3">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-red-600 hover:bg-red-500 text-white rounded-lg px-6 py-6 text-xs uppercase tracking-widest font-bold border-0 shadow-lg shadow-red-900/30"
+                >
                   <Link to="/hse-quality">
                     Explore HSE & Quality Manual <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10">
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="border-white/20 bg-transparent text-white hover:bg-white/10 rounded-lg px-6 py-6 text-xs uppercase tracking-widest font-semibold"
+                >
                   <Link to="/about">About Our Leadership</Link>
                 </Button>
               </div>
             </div>
 
             <div className="lg:col-span-5">
-              <div className="relative overflow-hidden border border-white/15 bg-black/40">
+              <div className="relative overflow-hidden rounded-xl border border-white/10 bg-[#0D1117]">
                 <img
                   src={qualityImg}
                   alt="Quality assurance inspection and dimensional verification"
-                  className="aspect-square w-full object-cover opacity-85"
+                  className="aspect-[4/5] w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between border-t border-white/20 pt-4 text-xs font-mono">
-                  <span>Shield Global QA/QC</span>
-                  <span className="text-accent flex items-center gap-1.5">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#07090C] via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between border-t border-white/10 bg-black/50 px-5 py-4 text-xs font-mono backdrop-blur-sm">
+                  <span className="text-white/80">Shield Global QA/QC</span>
+                  <span className="text-red-400 flex items-center gap-1.5">
                     <ShieldCheck className="h-4 w-4" /> 100% Traceability
                   </span>
                 </div>
