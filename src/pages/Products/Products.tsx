@@ -1,0 +1,6 @@
+import { ArrowUpRight } from "lucide-react";
+import { PageIntro } from "@/components/shared/page-intro";
+import { Reveal } from "@/components/shared/reveal";
+import { products } from "@/assets/data/products";
+
+export function ProductsPage(){return <><PageIntro index="02" title="Products built around performance." description="Placeholder product families demonstrate the intended catalogue structure. Replace names, specifications, and imagery with verified portfolio content."/><section className="technical-container py-20 lg:py-32">{products.map((product,index)=><Reveal key={product.name}><article className="group grid gap-7 border-t border-border py-10 md:grid-cols-[5rem_1.2fr_.8fr_auto] md:items-center"><span className="section-label">0{index+1}</span><div className="overflow-hidden"><img src={product.image} loading="lazy" width={1280} height={960} alt={product.name} className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"/></div><div><div className="section-label">{product.category}</div><h2 className="mt-3 font-display text-4xl md:text-6xl">{product.name}</h2><p className="mt-4 text-sm text-muted-foreground">Specifications and product description to be supplied.</p></div><ArrowUpRight className="h-5 w-5"/></article></Reveal>)}</section></>}
