@@ -17,7 +17,7 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { servicesList } from "@/assets/data/services";
 import { MobileMenu } from "@/components/layout/MobileMenu";
-import logoFull from "@/assets/logo/logo.png";
+import logoFull from "@/assets/logo/logo-full.png";
 
 const serviceIconsMap: Record<string, typeof Building2> = {
   Building2,
@@ -83,7 +83,7 @@ export function Header({ onQuoteOpen }: HeaderProps) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div
             className={`flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-[#0B0E12]/85 backdrop-blur-xl shadow-2xl shadow-black/40 transition-all duration-300 ${
-              scrolled ? "h-16 px-4" : "h-[72px] px-5 sm:h-20 sm:px-6"
+              scrolled ? "h-[60px] px-5" : "h-[76px] px-5 sm:h-[84px] sm:px-6"
             }`}
           >
             {/* Logo */}
@@ -96,7 +96,7 @@ export function Header({ onQuoteOpen }: HeaderProps) {
                 src={logoFull}
                 alt="Shield Global"
                 className={`w-auto object-contain transition-all duration-300 ${
-                  scrolled ? "h-10 sm:h-11" : "h-12 sm:h-14"
+                  scrolled ? "h-11 sm:h-12" : "h-14 sm:h-16"
                 }`}
               />
             </Link>

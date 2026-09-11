@@ -32,7 +32,7 @@ export function Footer({ onQuoteOpen }: FooterProps) {
             <img
               src={logoFull}
               alt="Shield Global Technical Services LLC"
-              className="h-11 w-auto object-contain"
+              className="h-14 sm:h-16 w-auto object-contain"
             />
             <p className="max-w-sm text-xs leading-relaxed text-muted-foreground">
               Delivering excellence across building construction, facility management, oil & gas,
